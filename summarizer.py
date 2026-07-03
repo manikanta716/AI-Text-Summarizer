@@ -70,7 +70,7 @@ def summarize(text: str, style: str, client: anthropic.Anthropic) -> str:
     system_prompt = STYLE_PROMPTS.get(style, STYLE_PROMPTS["concise"])
 
     message = client.messages.create(
-        model="claude-sonnet-4-6",
+                model="claude-sonnet-4-5",
         max_tokens=1024,
         messages=[
             {
